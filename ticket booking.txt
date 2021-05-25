@@ -1,0 +1,703 @@
+index
+=========
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Example</title>
+    </head>
+    <body style="background-color:#ffb3b3;">>
+        <h1>WELCOME TO COLOR BUS!!!</h1>
+    <h>please login and go to our website</h>
+        <form method="post" action="home.jsp">
+            <center>
+            <table border="1" width="30%" cellpadding="3">
+                <thead>
+                    <tr>
+                        <th colspan="2">Login Here</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>User Name</td>
+                        <td><input type="text" name="uname" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" name="pass" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Login" /></td>
+                        <td><input type="reset" value="Reset" /></td>
+                    </tr>
+                </tbody>
+            </table>
+            </center>
+        </form>
+    <style>
+body {
+  background-image: url('https://lh3.googleusercontent.com/-bc52Rfz49To/XjumIaQEAmI/AAAAAAAAAUI/xPAg5-wOHUwE554fb284d5bNMuYDdC_YgCK8BGAsYHg/s0/2020-02-05.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style> 
+    </body>
+</html>
+
+
+
+
+home
+======
+
+
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+ 
+
+<style>
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+</style>
+</head>
+<body style="background-color:#CD5C5C;">
+    
+
+      
+
+<ul>
+
+             <li><a href="http://localhost:8080/fproject/form.jsp">ABOUT</a></li>
+  <li><a class="active" href="http://localhost:8080/project/table.jsp">BUS TIME TABLE</a></li>
+  <li><a href="#BUS HIRE">BUS HIRE</a></li>
+    <li><a href="http://localhost:8080/project/Action_cookie.jsp">BOOK TICKET NOW</a></li>
+    <li><a href="#PILGRIMAGES">PILGRIMAGES</a></li>
+ <li style="float:right"><a href="#CONTACT">CONTACT</a></li>
+</ul>
+    
+    
+    
+ 
+<section>
+  <img class="mySlides" src="https://pbs.twimg.com/media/DKVhmcEU8AAZZZz.jpg"  width="1900" height="1100">
+</section>
+    
+    
+    
+</BODY>
+</html>
+
+
+
+about
+=========
+
+
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<html>
+<head>
+<title>login Page</title>
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<body>
+
+<section>
+  <img class="mySlides" src="https://media1.tenor.com/images/1ff86e8e009e3fecd50dfc59e9f9c6b2/tenor.gif?itemid=15198244"  width="1900" height="500"">
+</section>
+<h1> About us</h1>
+<p>redBus is India?s largest online bus ticketing platform that has transformed bus travel in the country by bringing ease and convenience to millions of Indians who travel using buses. 
+Founded in 2006, redBus is part of India?s leading online travel company MakeMyTrip Limited (NASDAQ: MMYT).
+By providing widest choice, superior customer service, lowest prices and unmatched benefits, redBus has served over 8 million customers. 
+redBus has a global presence with operations across Indonesia, Singapore, Malaysia, Colombia and Peru apart from India.</p>
+
+<h1>Management Team</h1>
+    
+<h1>Prakash Sangam, CEO</h1>
+<p>Prakash Sangam has been Chief Executive Officer of redBus since June 2014. Prior to redBus. 
+He served as an Executive Vice President of Info Edge India (Naukri group), heading two group businesses namely Shiksha.com and Jeevansathi.com. 
+He?s also worked as General Manager of Marketing and Innovation at Airtel and has also had multiple roles across Marketing, Brand Management 
+and Sales at Hindustan Unilever. Prakash has completed his MBA from IIM Calcutta and also holds an Honours degree in Production Engineering from 
+Mumbai University.</p>
+<h1>Anoop Menon, CTO</h1>
+<p>Anoop Menon serves as Chief Technology Officer at redBus. 
+    Anoop plays an integral role in setting the company?s strategic direction, development and future growth. 
+    At redBus, he leads effective delivery of scalable systems to the customers, agents and bus operators by incorporating the latest technology. 
+    A tech enthusiast, Anoop comes with over 18 years of extensive experience in building scalable and high-performing products across telecom, 
+    internet and mobile ecommerce domains. Anoop strongly believes that hard work and commitment can overcome the barriers to success.
+    He completed BE in Mechanical Engineering from Madras University and loves sports, movies, TV and music.</p>
+</body>
+
+</html>
+
+
+
+
+table
+=====
+
+
+
+<%-- 
+    Document   : table
+    Created on : 5 Feb, 2020, 2:33:37 PM
+    Author     : Administrator
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html><!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body STYLE="background-color: #00FFFF">
+    <section>
+  <img class="mySlides" src="https://redbuscoaches.com.au/wp-content/uploads/2016/06/logo-large.png"  width="1400" height="200">
+</section>
+   
+   <h2>BUS TIMETABLE</h2>
+<p>choose the bus </p>
+
+<table style="width:100%">
+  <tr>
+    <th>BUS NAME</th>
+    <th>BUS NUMBER</th> 
+    <th>FROM PLACE</th>
+     <th>TO PLACE</th>
+        <th>STARTING TIME</th>
+           <th>ARRIVAL TIME</th>
+            
+              
+  </tr>
+  <tr>
+    <td>SUNDARA TRAVELS</td>
+    <td>TN47J6768</td>
+    <td>COIMBATORE</td>
+      <td>CHENNAI</td>
+        <td>9:00 am</td>
+          <td>7:00 pm</td>
+  </tr>
+  
+   <tr>
+    <td>RDP TRAVELS</td>
+    <td>TN40J9868</td>
+    <td>CHENNAI</td>
+      <td>BANGALORE</td>
+        <td>10:00 am</td>
+          <td>10:00 pm</td>
+  </tr>
+  
+  
+     <tr>
+    <td>NIKI TRAVELS</td>
+    <td>TN40K9868</td>
+    <td>MYSORE</td>
+      <td>ANNUR</td>
+        <td>5:30 am</td>
+          <td>3:00 pm</td>
+  </tr>
+  
+  
+  
+     <tr>
+    <td>PAVI TRAVELS</td>
+    <td>TN40K9845</td>
+    <td>COORGE</td>
+      <td>BANGALORE</td>
+        <td>10:00 am</td>
+          <td>12:00 pm</td>
+  </tr>
+  
+     <tr>
+    <td>MANI TRAVELS</td>
+    <td>TN40J9548</td>
+    <td>TIRUPATI</td>
+      <td>KRISHNAGIRI</td>
+        <td>9:00 am</td>
+          <td>6:00 pm</td>
+  </tr>
+  
+  
+     <tr>
+    <td>RAM TRAVELS</td>
+    <td>TN9J9786</td>
+    <td>MADURAI</td>
+      <td>MYSORE</td>
+        <td>6:00 am</td>
+          <td>5:00 pm</td>
+  </tr>
+  <h>MSRTC Bus Details</h>
+  <h1><b>Q-1). What is the Total Number of Routes covered by MSRTC on daily basis?</b></h1>
+  A: <p>MSRTC covers 95065 routes (approx.) on daily basis.</p>
+  
+  <h1><b>Q-2). What is the total number of Night Service Buses run by MSRTC?</b></h1>
+  <p>A: There are 12495 Night Service Buses run by MSRTC.</p>
+  
+    <h1><b>Q-3). What is the shortest & the longest route covered by MSRTC?</b></h1>
+   <p>A: Shortest route is Poladpur to Shirur (Maharashtra) and Longest route is Kasoda to Shirur (Maharashtra).</p>
+  
+  
+            
+ 
+
+
+
+
+   
+</table>
+    </body>
+</html>
+
+
+
+
+action_cookie
+========
+
+
+
+
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Guru Cookie</title>
+</head>
+<body style="background-color:	#C0C0C0;">
+        
+<section>
+  <img class="mySlides" src="https://media.wigzo.com/uploads/4b733631-9b52-410c-8e6f-a861aaafd5d8/userimagegallery/2bd5bb95-f26d-43ae-bd53-90644a9e2e2f.gif?_=2020-01-10T08:00:38.898Z"  width="1900" height="500"">
+</section>
+
+<form action="pay.jsp" method="GET">
+    <center>
+        <h1>BOOK TICKET NOW!</h1>
+        <br />
+First name: <input type="text" name="First name">
+
+<br />
+
+Last name: <input type="text" name="Last name" />
+
+<br />
+Age: <input type="text" name="Age" />
+<br />
+
+Date: <input type="text" name="Date" />
+<br />
+
+
+From Place: <input type="text" name="From Place" />
+<br />
+
+
+To Place: <input type="text" name="To PLace" />
+<br />
+    
+Bus Type: <input type="text" name="Bus Type" />
+<br />
+
+Bus Name: <input type="text" name="Bus Name" />
+<br />
+No.of.passengers: <input type="text" name="No.of. passengers" />
+<br />
+<input type="submit" value="Proceed to pay" />
+</form>
+</center>
+</body>
+</html>
+
+
+
+
+action_cookie main
+================
+
+
+
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%
+         
+   Cookie username = new Cookie("username",
+ 			  request.getParameter("username"));
+   Cookie email = new Cookie("email",
+			  request.getParameter("email"));
+ 
+   
+   username.setMaxAge(60*60*10); 
+   email.setMaxAge(60*60*10); 
+ 
+   // Add both the cookies in the response header.
+   response.addCookie( username );
+   response.addCookie( email );
+%>
+ 
+ 
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Guru Cookie JSP</title>
+</head>
+<body style="background-color: #B3B6B7;">
+            <form method="post" action="end.jsp">
+                
+                                    <section>
+  <img class="mySlides" src="https://s3-eu-central-1.amazonaws.com/bookingkit-wp-prod-s3fs/wp-content/uploads/2019/07/19115834/shop_order-1.gif"  width="1900" height="500">
+</section>
+
+                <center>  <h1>check the details</h1>
+
+ 
+<b>First Name:</b>
+   <%= request.getParameter("First name")%>
+   <br />
+<b>Last Name:</b>
+   <%= request.getParameter("Last name")%>
+   <br />
+<b>Age:</b>
+ <%= request.getParameter("Age")%>
+   <br />
+   
+   <b>Date:</b>
+   <%= request.getParameter("Date")%>
+   <br />
+   <b>From place:</b>
+   <%= request.getParameter("From Place")%>
+   <br />
+   <b>To Place:</b>
+   <%= request.getParameter("To place")%>
+   <br />
+ <b>Bus type:</b>
+   <%= request.getParameter("Bus type")%>
+   <br />
+   
+   <b>Bus Name:</b>
+   <%= request.getParameter("Bus name")%>
+   <br />
+   
+   <b>No.of.passengers:</b>
+   <%= request.getParameter("No.of passengers")%>
+   <br />
+   
+   
+   <table>     <tr>
+                        <td><input type="submit" value="confirm" /></td>
+                    </tr>
+                </tbody>
+            </table>
+                </center>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+pay
+====
+
+
+
+
+<%-- 
+    Document   : seats
+    Created on : 6 Feb, 2020, 10:12:21 AM
+    Author     : Administrator
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+    <head>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+        <style> 
+.div1 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+.div2 {
+  width: 300px;
+  height: 100px;  
+  padding: 50px;
+  border: 1px solid red;
+}
+</style>
+    </head>
+    <body>
+                <form method="post" action="Action_cookie_main.jsp">
+                    
+                    
+                    
+
+        <center>
+<br>
+<div class="div2">Card holders name: <input type="text" name="Card holders name">
+
+<br />
+
+Card no: <input type="text" name="card no">
+
+<br />
+
+Expiry date: <input type="text" name="Expiry date">
+
+<br />
+
+CVC: <input type="text" name="CVC">
+
+<br />
+<table>
+ <tr>
+                        <td><input type="submit" value="submit" /></td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+</div>
+
+
+        </center>
+                    
+                     
+
+</body>
+</html>
+
+
+
+
+
+
+end
+===
+
+
+
+<%-- 
+    Document   : end
+    Created on : 6 Feb, 2020, 2:26:16 PM
+    Author     : Administrator
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+        
+                                            <section>
+  <img class="mySlides" src="https://media2.giphy.com/media/ylyUQl358jhxMXjS1i/source.gif"  width="1900" height="500">
+</section>
+
+        <h1>Ticket booked successfully!!</h1>
+    <h>Happy journey</h>
+    <form action="view.jsp" method="post">
+  <input type="submit" value="click to view the ticket"></form>
+    </body>
+</html>
+
+
+
+
+
+details:
+=======
+
+<%--
+    Document   : details
+    Created on : 5 Feb, 2020, 10:21:42 AM
+    Author     : Administrator
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page import = "java.io.*,java.util.*,java.sql.*"%>
+<%@ page import = "javax.servlet.http.*,javax.servlet.*" %>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c"%>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/sql" prefix = "sql"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title></title>
+    </head>
+    <body style='background-color:peachpuff;'>
+        <h1><center> <font face="verdana" color="green">cse</font></center></h1>
+     
+        <sql:setDataSource var = "snapshot" driver = "com.mysql.jdbc.Driver"
+         url = "jdbc:mysql://localhost/cse"
+         user = "root"  password = ""/>
+ 
+        <sql:query dataSource = "${snapshot}" var = "result">
+        SELECT * from test;
+       </sql:query>
+        <table border = "1" width = "100%">
+         <tr>
+            <th>bus_no</th>
+            <th>bus_name</th>
+            
+         </tr>
+         
+         <c:forEach var = "row" items = "${result.rows}">
+            <tr>
+               <td><c:out value = "${row.bus_no}"/></td>
+               <td><c:out value = "${row.bus_name}"/></td>
+            
+            </tr>
+         </c:forEach>
+      </table>
+    </body>
+</html>
+
+
+
+index
+========
+
+
+
+<%-- 
+    Document   : index
+    Created on : 6 Feb, 2020, 10:46:36 AM
+    Author     : Administrator
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Booking details</title>
+</head>
+<body>
+<h1>Booking details</h1>
+<form action="process.jsp" method="post">
+
+    First Name:<br>
+    <input type="text" name="first_name"><br>
+    Last Name:<br>
+    <input type="text" name="last_name"><br>
+    Passenger Id:<br>
+    <input type="text" name="passenger_id"><br>
+   Ticket No:<br>
+   <input type="password" name="ticket_no"><br>
+   Seat No:<br>
+ <input type="text" name="seat_no"><br>
+Destination:<br>
+<input type="text" name="destination"><br>
+Booking Date:<br>
+<input type="text" name="booking_date"><br>
+Pay Amount:<br>
+<input type="text" name="amount"><br>
+Email:<br>
+<input type="text" name="email"><br>
+<input type="submit" value="Submit"></form>
+</body>
+</html>
+
+
+
+view
+=======
+
+
+
+<%-- 
+    Document   : index
+    Created on : 6 Feb, 2020, 10:46:36 AM
+    Author     : Administrator
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Booking details</title>
+</head>
+<body>
+<h1>Booking details</h1>
+<form action="process.jsp" method="post">
+
+    First Name:<br>
+    <input type="text" name="first_name"><br>
+    Last Name:<br>
+    <input type="text" name="last_name"><br>
+    Passenger Id:<br>
+    <input type="text" name="passenger_id"><br>
+   Ticket No:<br>
+   <input type="password" name="ticket_no"><br>
+   Seat No:<br>
+ <input type="text" name="seat_no"><br>
+Destination:<br>
+<input type="text" name="destination"><br>
+Booking Date:<br>
+<input type="text" name="booking_date"><br>
+Pay Amount:<br>
+<input type="text" name="amount"><br>
+Email:<br>
+<input type="text" name="email"><br>
+<input type="submit" value="Submit"></form>
+</body>
+</html>
